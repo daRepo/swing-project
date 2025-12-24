@@ -5,6 +5,7 @@
 package student.proiect.swing.views;
 
 import javax.swing.JFrame;
+import student.proiect.swing.util.Database;
 
 /**
  *
@@ -12,4 +13,11 @@ import javax.swing.JFrame;
  */
 public class DashboardView extends JFrame {
     
+    private final Database db;
+    
+    public DashboardView(Database db) {
+    
+        super("Dumitras Alexandru");
+        this.db = db;
+    }
 }

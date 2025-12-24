@@ -30,6 +30,7 @@ public class LoginView extends JFrame {
 
     public LoginView(Database db) {
 
+        super("Dumitras Alexandru");
         this.db = db;
         initUI();
     }
@@ -88,7 +89,7 @@ public class LoginView extends JFrame {
 
         if (db.login(username, password)) {
             dispose(); // close login
-            new DashboardView().setVisible(true);
+            new DashboardView(db).setVisible(true);
         } else {
             statusLabel.setText("Invalid username or password");
         }
