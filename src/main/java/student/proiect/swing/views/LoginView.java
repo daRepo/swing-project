@@ -14,6 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+import student.proiect.swing.ProiectSwing;
 import student.proiect.swing.util.Database;
 
 /**
@@ -30,14 +31,13 @@ public class LoginView extends JFrame {
 
     public LoginView(Database db) {
 
-        super("Dumitras Alexandru");
+        super("Login" + ProiectSwing.TITLE);
         this.db = db;
         initUI();
     }
 
     private void initUI() {
 
-        setTitle("Student Course Manager – Nume Prenume – Grupa X");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(350, 200);
         setLocationRelativeTo(null);

@@ -12,6 +12,8 @@ import student.proiect.swing.views.LoginView;
  * @author cptsoarbezeama
  */
 public class ProiectSwing {
+    
+    public static String TITLE = " - Dumitras Alexandru - grupa 309";
 
     public static void main(String[] args) throws SQLException {
 
